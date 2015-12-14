@@ -1,0 +1,11 @@
+*.exe
+*.iobj
+*.ipdb
+*.pdb
+*.sdf
+*.opendb
+*.user
+Bonzomatic*Debug/
+Bonzomatic*Release/
+.vs
+*.suo
