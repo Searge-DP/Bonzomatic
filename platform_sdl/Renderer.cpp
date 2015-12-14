@@ -125,7 +125,7 @@ namespace Renderer
     "{\n"
     "  float c = 0.5 + sin( v.x * 10.0 ) + cos( sin( time + v.y ) * 20.0 );\n"
     "  return vec4( sin(c * 0.2 + cos(time)), c * 0.15, cos( c * 0.1 + time / .4 ) * .25, 1.0 );\n"
-    "}\n"
+    "}\n\n"
     "void main(void)\n"
     "{\n"
     "  vec2 uv = vec2(gl_FragCoord.x / v2Resolution.x, gl_FragCoord.y / v2Resolution.y);\n"
@@ -144,7 +144,7 @@ namespace Renderer
     "  vec4 t = plas( m * 3.14, fGlobalTime ) / d;\n"
     "  t = clamp( t, 0.0, 1.0 );\n"
     "  out_color = f + t;\n"
-    "}";
+    "}\n";
 
   SDL_Surface * mScreen = NULL;
   bool run = true;

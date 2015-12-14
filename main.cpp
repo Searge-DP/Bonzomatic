@@ -45,9 +45,10 @@ int main()
   RENDERER_SETTINGS settings;
   settings.bVsync = false;
 #ifdef _DEBUG
-  settings.nWidth = 1280;
-  settings.nHeight = 720;
+  settings.nWidth = 1600;
+  settings.nHeight = 900;
   settings.windowMode = RENDERER_WINDOWMODE_WINDOWED;
+  settings.bVsync = true;
 #else
   settings.nWidth = 1920;
   settings.nHeight = 1080;
