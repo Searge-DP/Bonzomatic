@@ -10,6 +10,7 @@ The tool was originally conceived and implemented after the Revision 2014 demosc
 ## Keys
 - F2: toggle texture preview
 - F5: recompile shader
+- F8: reset time to 0
 - F11: hide shader overlay
 - Alt-F4: exbobolate your planet
 
@@ -44,7 +45,7 @@ Create a ```config.json``` with e.g. the following contents: (all fields are opt
 ```
 
 ## Building
-Please use Visual C++ 2010 - nothing else is needed right now.
+Please use Visual C++ 2015 - nothing else is needed right now.
 
 ## Credits and acknowledgements
 ### Original / parent project authors

@@ -295,6 +295,10 @@ int main()
           mDebugOutput.SetText( szError );
         }
       }
+      else if (Renderer::keyEventBuffer[i].scanCode == 289) // F8
+      {
+          Timer::Start();
+      }
       else if (Renderer::keyEventBuffer[i].scanCode == 292) // F11
       {
         bShowGui = !bShowGui;
@@ -390,9 +394,11 @@ int main()
 
       char szLayout[255];
       Misc::GetKeymapName(szLayout);
-      std::string sHelp = "F2 - toggle texture preview   F5 - recompile shader   F11 - hide GUI   Current keymap: ";
+      std::string sHelp = "F2 - toggle texture preview | F5 - recompile shader | F11 - hide GUI | Current keymap: ";
       sHelp += szLayout;
+      std::string sFrame = std::string("F8 - reset time | Time: ") + std::to_string(time);
       surface->DrawTextNoClip( Scintilla::PRectangle(20,Renderer::nHeight - 20,100,Renderer::nHeight), *mShaderEditor.GetTextFont(), Renderer::nHeight - 5.0, sHelp.c_str(), sHelp.length(), 0x80FFFFFF, 0x00000000);
+      surface->DrawTextNoClip( Scintilla::PRectangle(20,2,100,Renderer::nHeight), *mShaderEditor.GetTextFont(), 14.0, sFrame.c_str(), sFrame.length(), 0x80FFFFFF, 0x00000000);
     }
 
 

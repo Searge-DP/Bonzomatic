@@ -186,6 +186,7 @@ namespace Renderer
 
     SDL_EnableUNICODE(true);
     SDL_EnableKeyRepeat(250, 20);
+    SDL_WM_SetCaption("Bonzomatic - customized by Searge", NULL);
 
 #ifdef _WIN32
     if (settings->bVsync)
