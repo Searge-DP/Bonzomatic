@@ -9,3 +9,6 @@ Bonzomatic*Debug/
 Bonzomatic*Release/
 .vs
 *.suo
+*.ilk
+*.raw
+*.glsl

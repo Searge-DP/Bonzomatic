@@ -397,8 +397,12 @@ int main()
       std::string sHelp = "F2 - toggle texture preview | F5 - recompile shader | F11 - hide GUI | Current keymap: ";
       sHelp += szLayout;
       std::string sFrame = std::string("F8 - reset time | Time: ") + std::to_string(time);
-      surface->DrawTextNoClip( Scintilla::PRectangle(20,Renderer::nHeight - 20,100,Renderer::nHeight), *mShaderEditor.GetTextFont(), Renderer::nHeight - 5.0, sHelp.c_str(), sHelp.length(), 0x80FFFFFF, 0x00000000);
-      surface->DrawTextNoClip( Scintilla::PRectangle(20,2,100,Renderer::nHeight), *mShaderEditor.GetTextFont(), 14.0, sFrame.c_str(), sFrame.length(), 0x80FFFFFF, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(20, Renderer::nHeight - 19, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), Renderer::nHeight - 5.0, sHelp.c_str(), sHelp.length(), 0xFF000000, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(21, Renderer::nHeight - 20, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), Renderer::nHeight - 5.0, sHelp.c_str(), sHelp.length(), 0xFF000000, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(20, Renderer::nHeight - 20, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), Renderer::nHeight - 5.0, sHelp.c_str(), sHelp.length(), 0xFFFFFFFF, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(20, 3, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), 14.0, sFrame.c_str(), sFrame.length(), 0xFF000000, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(21, 2, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), 14.0, sFrame.c_str(), sFrame.length(), 0xFF000000, 0x00000000);
+      surface->DrawTextNoClip(Scintilla::PRectangle(20, 2, 100, Renderer::nHeight), *mShaderEditor.GetTextFont(), 14.0, sFrame.c_str(), sFrame.length(), 0xFFFFFFFF, 0x00000000);
     }
 
 
