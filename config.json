@@ -1,0 +1,18 @@
+{
+  "font":{
+    "file":"ProFontWindows.ttf",
+    "size":18,
+  },
+  "rendering":{
+    "fftSmoothFactor": 0.9,
+  },
+  "textures":{
+    "texChecker":"textures/checker.png",
+    "texNoise":"textures/noise.png",
+  },
+  "gui":{
+    "outputHeight": 100,
+    "opacity": 192,
+    "texturePreviewWidth": 100,
+  }
+}
