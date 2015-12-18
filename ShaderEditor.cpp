@@ -250,11 +250,6 @@ void ShaderEditor::Tick()
   Scintilla::Editor::Tick();
 }
 
-void ShaderEditor::SetTicking( bool on )
-{
-
-}
-
 int ShaderEditor::KeyDown( int key, bool shift, bool ctrl, bool alt, bool *consumed )
 {
   return Scintilla::Editor::KeyDown( key, shift, ctrl, alt, consumed );
